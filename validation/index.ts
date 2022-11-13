@@ -2,7 +2,7 @@ import express, { Response, Request, NextFunction } from "express";
 import Joi from "joi";
 import { joiPasswordExtendCore } from "joi-password";
 const joiPassword = Joi.extend(joiPasswordExtendCore);
-import data from "../model/User.json";
+import data from "../data/User.json";
 
 export const signUpValidation = (
   req: Request,
