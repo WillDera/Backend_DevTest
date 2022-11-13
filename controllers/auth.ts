@@ -4,7 +4,7 @@ import * as fs from "fs";
 import { signUp, User } from "../helper/interfaces";
 import { cleanData, UserModel } from "../helper/util";
 import bcrypt from "bcrypt";
-import data from "../model/User.json";
+import data from "../data/User.json";
 import { generateAccessToken, verifyAccessToken } from "../helper/jwt";
 import UserType from "../types/index";
 
@@ -80,7 +80,7 @@ export const register = async (
     newData[email] = user;
 
     fs.writeFile(
-      path.join(__dirname, "../model/User.json"),
+      path.join(__dirname, "../data/User.json"),
       JSON.stringify(newData),
       "utf8",
       (err) => {
@@ -148,7 +148,7 @@ export const update_user = async (
     newData[_email] = user;
 
     fs.writeFile(
-      path.join(__dirname, "../model/User.json"),
+      path.join(__dirname, "../data/User.json"),
       JSON.stringify(newData),
       "utf8",
       (err) => {
