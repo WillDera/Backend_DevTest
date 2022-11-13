@@ -1,0 +1,1 @@
+{"admin@dev.com":{"id":1,"role":"ADMIN","email":"admin@dev.com","password":"$2a$10$mIxXLr3AHmh7ntJ4ntf6aOOVUiAp/1GD47llaQ6fMo6gbt00kL8du"},"user@user1.com":{"id":2,"role":"USER","firstname":"User1","lastname":"user1","email":"user@user1.com","password":"$2b$10$RqjgqKluKKMqwkCU6z8YQefTUu5XyZqp9VLoqu6xSPC3d4bct7RTS","address":"User1 address"}}
